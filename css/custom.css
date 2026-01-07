@@ -1,0 +1,41 @@
+html {
+  /* Headline colors */
+  --h1-main-color: #fafffa;
+  --h2-main-color: #fafffa;
+  --h3-main-color: #fafffa;
+  --h1-inverted: #244b6b;
+  --h2-inverted: #244b6b;
+  --h3-inverted: #244b6b;
+  /* font sizes in rem (base 16px) */
+  --h1-size: 3.875rem; /* 62px */
+  --h2-size: 3.5rem;   /* 56px */
+  --h3-size: 1.5rem;   /* 24px */
+
+  /* paragraph colors */
+  --p-main-color: #fafffa;
+  --p-inverted: #244b6b;
+  --p-size: 1rem; /* 16px */
+
+  /* section colors */
+  --bg-color: #daf0e9;
+  --section-bg-color: #246b5e;
+  --invert-bg-color: #244b6b;
+  --border-color: #fa5c20;
+  --tema-info-bg-color: #fafffa;
+  --tema-text-color: #244b6b;
+  --card-section: #faad8d;
+
+  /* button colors */
+  --button-bg-color: #fa5c20;
+  --button-text-color: #fafffa;
+  --tema-button-bg-color: #fa5c20;
+  --tema-button-text-color: #fafffa;
+
+  /* margins */
+  --margin-small: 0.5rem;  /* 8px */
+  --margin-medium: 1rem;   /* 16px */
+  --margin-large: 2rem;    /* 32px */
+
+  /* responsive size for large sidebar/menu text */
+  --sidebar-font-size: 6.25rem; /* 100px equivalent */
+}

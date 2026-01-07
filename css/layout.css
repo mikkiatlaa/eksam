@@ -1,0 +1,239 @@
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2%;
+}
+
+.blue_left {
+  grid-area: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.blue_right {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar ul li {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Mobile (up to 470px) optimizations */
+@media (max-width: 470px) {
+  html {
+    font-size: 16px; /* base font for mobile */
+  }
+
+  .billedegalleri {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 12px;
+  }
+
+  .opgavebeskrivelse {
+    margin: 20%;
+    display: inline-block;
+  }
+
+  .grid1-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: auto;
+    min-height: auto;
+    scroll-snap-align: none;
+  }
+
+  .grid-1-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: auto;
+    min-height: auto;
+    scroll-snap-align: none;
+  }
+
+  .design-process {
+    margin: 20%;
+  }
+
+  .gestaltlov-section {
+    display: inline-block;
+    margin: 20%;
+  }
+
+  .refleksion-section {
+    display: inline-block;
+    margin: 20%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .sidebar ul {
+    margin: 20%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  /* make room for the fixed header/menu on small screens */
+  main {
+    padding-top: 72px;
+  }
+
+  /* header/menu adjustments */
+  .menu,
+  .menu-width {
+    width: 100vw;
+  }
+
+  .menu h1 {
+    font-size: 18px;
+  }
+
+  .menu-burger {
+    padding: 8px; /* bigger tap area */
+  }
+
+  nav ul {
+    border: none;
+    gap: 8px;
+  }
+
+  /* sidebar should cover full width on mobile */
+  .sidebar {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* make full-width stacked sections instead of split 2-column view */
+  /* stack two-column grids into a single column flow */
+  .grid_1-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: auto;
+    min-height: auto;
+    scroll-snap-align: none;
+  }
+
+  .blue_left,
+  .blue_right,
+  .logo_container {
+    width: 100%;
+    height: auto;
+    padding: 1.75rem 0.75rem;
+    box-sizing: border-box;
+  }
+
+  .content {
+    width: 92%;
+    margin: 18px auto;
+  }
+
+  .content h3 {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .content h1 {
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 8px;
+  }
+
+  .content p {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .cta-button {
+    padding: 10px 14px;
+    font-size: 16px;
+    margin: 14px 0;
+  }
+
+  .border-box {
+    border-top-width: 1px;
+    padding: 20px 12px;
+    margin-top: 12px;
+  }
+
+  .logo_container svg {
+    width: auto;
+    height: 160px;
+  }
+
+  .flexbox {
+    height: auto;
+  }
+
+  li a,
+  .sidebar a {
+    padding: 14px 12px;
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 14px 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ensure content stacks vertically and doesn't overlap */
+  .indhold.flex {
+    flex-direction: column;
+    gap: 0.625rem;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .indhold.flex h3 {
+    font-size: 12px;
+  }
+
+  .indhold.flex a svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* reduce heavy scroll snap effects on small screens for smoother scrolling */
+  html {
+    scroll-snap-type: none;
+  }
+}

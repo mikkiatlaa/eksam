@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/text.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/website.css" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+    <title>Mikael's Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div class="menu-width">
+          <h1>ATLASON</h1>
+          <nav>
+            <ul>
+              <li><span></span></li>
+              <li>
+                <button class="menu-burger" id="open-sidebar-button" onclick="openSidebar()">
+                  <svg width="49" height="30" viewBox="0 0 49 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.125 15H42.875M6.125 7.5H42.875M6.125 22.5H42.875" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </li>
+              <li><a href="ommig.html">OM MIG</a></li>
+              <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li>
+            <button id="close-sidebar-button" onclick="closeSidebar()">
+              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="22" r="22" fill="#787880" fill-opacity="0.16" />
+                <path
+                  style="mix-blend-mode: plus-darker"
+                  d="M13.7739 30.2495C13.6411 30.1167 13.5526 29.959 13.5083 29.7764C13.464 29.5993 13.464 29.4194 13.5083 29.2368C13.5526 29.0597 13.6383 28.9103 13.7656 28.7886L20.5308 22.0234L13.7656 15.2583C13.6383 15.1366 13.5526 14.9871 13.5083 14.8101C13.464 14.633 13.464 14.4531 13.5083 14.2705C13.5526 14.0879 13.6411 13.9302 13.7739 13.7974C13.9067 13.6646 14.0617 13.576 14.2388 13.5317C14.4214 13.4875 14.6012 13.4875 14.7783 13.5317C14.9554 13.576 15.1104 13.6618 15.2432 13.7891L22 20.5542L28.7568 13.7974C28.8896 13.6646 29.0446 13.576 29.2217 13.5317C29.3988 13.4875 29.5758 13.4875 29.7529 13.5317C29.93 13.576 30.085 13.6646 30.2178 13.7974C30.3561 13.9302 30.4474 14.0879 30.4917 14.2705C30.536 14.4476 30.536 14.6247 30.4917 14.8018C30.4474 14.9788 30.3589 15.1338 30.2261 15.2666L23.4692 22.0234L30.2261 28.7803C30.3589 28.9131 30.4447 29.0653 30.4834 29.2368C30.5277 29.4139 30.5277 29.591 30.4834 29.7681C30.4447 29.9507 30.3561 30.1112 30.2178 30.2495C30.085 30.3823 29.93 30.4709 29.7529 30.5151C29.5758 30.5594 29.3988 30.5594 29.2217 30.5151C29.0446 30.4709 28.8896 30.3823 28.7568 30.2495L22 23.4927L15.2432 30.2578C15.1104 30.3851 14.9554 30.4709 14.7783 30.5151C14.6012 30.5594 14.4242 30.5594 14.2471 30.5151C14.07 30.4709 13.9123 30.3823 13.7739 30.2495Z"
+                  fill="#999999"
+                />
+              </svg>
+            </button>
+          </li>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="website.html">Webdesign</a></li>
+          <li><a href="ommig.html">Om Mig</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="scroll_wrapper">
+        <div class="grid_1-1">
+          <div class="blue_left">
+            <div class="content">
+              <h3>MIT PORTFOLIO</h3>
+              <h1>Webdesigns lavet for dine brugere</h1>
+              <p>Book et klad med mig i dag og få en gratis konsultation.</p>
+              <button class="cta-button"><a href="kontakt.html">Book et kald</a></button>
+            </div>
+            <div class="border-box"><span></span></div>
+          </div>
+          <div class="logo_container">
+            <svg width="155" height="183" viewBox="0 0 155 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_40_77)">
+                <rect x="51" y="141" width="23" height="29" rx="4" fill="#246B5E" stroke="#FAFFFA" stroke-width="2" />
+                <rect x="39" y="120" width="47" height="41" rx="4" fill="#246B5E" stroke="#FAFFFA" stroke-width="2" />
+                <ellipse cx="62.5" cy="79.5" rx="57.5" ry="61.5" fill="#246B5E" stroke="#FAFFFA" stroke-width="2" />
+                <path
+                  d="M99.2536 10.0145C100.55 6.54989 105.45 6.54989 106.746 10.0145L114.78 31.4883C115.189 32.5816 116.055 33.4418 117.151 33.843L138.737 41.7437C142.237 43.0248 142.237 47.9752 138.737 49.2563L117.151 57.157C116.055 57.5582 115.189 58.4184 114.78 59.5117L106.746 80.9855C105.45 84.4501 100.55 84.4501 99.2536 80.9855L91.2203 59.5117C90.8112 58.4184 89.9449 57.5582 88.8487 57.157L67.2628 49.2563C63.7626 47.9752 63.7626 43.0248 67.2628 41.7437L88.8487 33.843C89.9449 33.4418 90.8112 32.5816 91.2203 31.4883L99.2536 10.0145Z"
+                  fill="#246B5E"
+                  stroke="#FAFFFA"
+                  stroke-width="2"
+                />
+              </g>
+              <defs>
+                <filter id="filter0_d_40_77" x="0" y="-4" width="161" height="187" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                  <feOffset dx="4" dy="4" />
+                  <feGaussianBlur stdDeviation="4" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_40_77" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_40_77" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <section class="tema-section">
+        <div class="tema-content" id="temaOversigt">
+          <h2>Tema Oversigt</h2>
+          <p>Her kan du finde specifikke temaer som jeg har arbejdet indenfor</p>
+          <div class="tema-oversigt">
+            <button class="tema-knap" id="btn-tema-02"><h3>Tema-02</h3></button>
+            <button class="tema-knap" id="btn-tema-03"><h3>Tema-03</h3></button>
+            <button class="tema-knap" id="btn-tema-04"><h3>Tema-04</h3></button>
+            <button class="tema-knap" id="btn-tema-05"><h3>Tema-05</h3></button>
+          </div>
+          <div class="tema-beskrivelse" id="tema-02">
+            <h2>Grundlæggende Web</h2>
+            <div class="tema-info">
+              <div class="indhold">
+                <ul>
+                  <li><a href="#formal">Formål</a></li>
+                  <li><a href="#opgavebeskrivelse">Opgavebeskrivelse</a></li>
+                  <li><a href="#design-process">Process</a></li>
+                  <li><a href="#gestaltlov">Gestalt lov</a></li>
+                  <li><a href="#semantisk">Semantisk</a></li>
+                  <li><a href="#refleksion">Refleksion</a></li>
+                </ul>
+              </div>
+              <div class="skills centerbox">
+                <a href="https://mikkiatlaa.github.io/Website/Website/index.html/Index.html"><img src="img/sideLink.svg" alt="sidelink" /></a>
+              </div>
+            </div>
+            <div class="formal-section" id="formal">
+              <div class="formal-indhold">
+                <h2>Formål</h2>
+                <p>Dette første tema giver en grundlæggende introduktion til de mest anvendte redskaber i en multimediedesigners værktøjskasse. Redskaberne udgør fundamentet for resten af din uddannelse på MMD.</p>
+                <div class="billedegalleri">
+                  <img src="img/MenuT2.webp" alt="Tool 1" class="T2menu" />
+                  <img src="img/indexT2.webp" alt="Tool 2" class="T2Billede" />
+                  <img src="img/infot2.webp" alt="Tool 3" class="T2Billede2" />
+                  <img src="img/GalleriT2.webp" alt="Tool 4" class="T2Billede3" />
+                  <img src="img/computerT2.webp" alt="Tool 5" class="T2Billede4" />
+                </div>
+              </div>
+            </div>
+            <div class="opgavebeskrivelse" id="opgavebeskrivelse">
+              <div class="opgave-indhold">
+                <h2>Opgave Beskrivelse</h2>
+                <p>I Tema 02 arbejdede vi med grundlæggende HTML og CSS viden.</p>
+                <p>det betyder at vi skulle tænke over semantisk kodning i html og indenfor css skulle arbjede med margins, padding, grid/flex og farver</p>
+                <p>målet med opgaven var at lave en infografik side der kommuikerer viden om computer og de basale ting der bygger en computer.</p>
+                <div class="styletile">
+                  <img src="img/styletileT2.webp" alt="Tool 1" class="T2menu" />
+                </div>
+              </div>
+            </div>
+            <div class="design-process" id="design-process">
+              <div class="design-indhold">
+                <h2>Design Process</h2>
+                <div class="centerbox">
+                  <h3>Positioneringskort</h3>
+                  <div class="positioneringskort">
+                    <img src="img/PositioneringskortT2.webp" alt="Positioneringskort" />
+                    <div>
+                      <p>For bedre at kunne forstå og kommunikere mine egne mål for hjemmesiden fandt jeg på to ord, som passede til den retning, jeg gerne vil gå med designet.</p>
+                      <p>Ordene var futuristisk og passion.</p>
+                      <p>Derefter fandt jeg modsatte ord og gik rundt til mine klassekammerater for at spørge, hvilke ord de syntes passede bedst til min styletile.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <p>
+                    Temaet Grundlæggende web havde ikke til formål at udvikle det perfekte brugerdesign, men derimod at give en grundlæggende forståelse for opbygningen af en infografikside. Arbejdet fokuserede på samspillet mellem visuelle elementer
+                    og tekst, herunder brugen af h1 og p, samt korrekt strukturering af indhold gennem article-elementet.
+                  </p>
+                  <p>
+                    Temaet kan overordnet beskrives med overskriften “Semantisk kodning og gestaltloven”, da der blev lagt vægt på, hvordan semantisk HTML og visuelle principper tilsammen skaber overblik, sammenhæng og forståelighed. Dette var
+                    samtidig første gang, vi blev introduceret til kodning, hvilket gjorde fokus på struktur og opbygning centralt i læringsprocessen.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="gestaltlov-section" id="gestaltlov">
+              <div class="gestaltlov-indhold">
+                <h2>Gestaltloven</h2>
+                <div class="centerbox">
+                  <div class="grid1-1">
+                    <div>
+                      <p>proximity - Elementer, der har relavence til hinanden skal også have et visualt sammenhænge</p>
+                      <q>Martin Rold: interfacedesign - side 119 </q>
+                    </div>
+                    <img src="img/proximity.webp" alt="proximity" />
+                  </div>
+                  <div class="grid1-1">
+                    <div>
+                      <p>similarity - elementer, der ser ens ud, for eksempel med samme form, farve eller størrelse, vil blive opfattet som relateret til hinanden</p>
+                      <q>Martin Rold: interfacedesign - side 119 </q>
+                    </div>
+                    <img src="img/similarity.svg" alt="similarity" />
+                  </div>
+                  <div class="grid1-1">
+                    <div>
+                      <p>Common region - Elementer, der er placeret, så at de danner linjer eller kurver. som fx et billede galleri. opfattes som relateret til hinanden.</p>
+                      <q>Martin Rold: interfacedesign - side 119 </q>
+                    </div>
+                    <img src="img/common.svg" alt="common" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="semantisk-section" id="semantisk">
+              <div class="semantisk-indhold">
+                <h2>Semantiske Elementer</h2>
+                <div class="grid1-1">
+                  <div class="text">
+                    <h4>Hvad er semantiske elementer?</h4>
+                    <p>Et semantisk element beskriver tydeligt sin betydning både for browseren og for udvikleren.</p>
+                    <h4>Eksempler på ikke-semantiske elementer:</h4>
+                    <p>div og span - disse fortæller intet om indholdets betydning.</p>
+                    <h4>Eksempler på semantiske elementer:</h4>
+                    <p>header, footer, article, section - disse elementer beskriver tydeligt deres indhold og formål.</p>
+                    <h4>Semantiske elementer i HTML</h4>
+                    <p>Mange websites indeholder HTML-kode som: div id="nav", div class="header" og div id="footer" for at indikere navigation, header og footer.</p>
+                    <p>I HTML findes der dog flere semantiske elementer, som kan bruges til at definere de forskellige dele af en webside:</p>
+                    <ul>
+                      <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3Schools - HTML5 Semantiske Elementer</a></li>
+                    </ul>
+                  </div>
+                  <div class="centerbox">
+                    <img src="img/semantisk.webp" alt="semantisk" />
+                    <div class="positioneringskort">
+                      <h4>Did you know?</h4>
+                      <p>Semantisk HTML forbedrer ikke kun læsbarheden for udviklere, men spiller også en vigtig rolle for både tilgængelighed og SEO.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="refleksion-section" id="refleksion">
+              <div class="refleksion-indhold">
+                <h2>Refleksion</h2>
+                <div class="centerbox">
+                  <h3>Design</h3>
+                  <p>
+                    I selve designprocessen opstod der et punkt, hvor jeg ikke dokumenterede min design research så grundigt, som jeg kunne have gjort. Det betyder, at da jeg gik rundt og spurgte, hvilke ord brugerne ville associere med mit style
+                    tile, manglede der tydelig dokumentation, som kunne underbygge og bekræfte mine designbeslutninger over for brugeren.
+                  </p>
+                  <h3>Process</h3>
+                  <p>
+                    Processen var relativt enkel, da det var det første tema, hvor vi reelt skulle levere et færdigt produkt. På dette tidspunkt var vi endnu ikke vant til at arbejde med en dybere designproces, som for eksempel at udvikle egne
+                    wireframes og layoutdiagrammer med udgangspunkt i en mere nuanceret brugerforståelse.Hvis opgaven skulle løses i dag, ville der være et markant større fokus på funktionalitet frem for passion, særligt hvis målgruppen defineres som
+                    IT-entusiaster.
+                  </p>
+                  <h3>Det endelige produkt</h3>
+                  <p>
+                    I forhold til farver, CTA-knapper og billedopsætning er der mangel på dynamik i sidens styling. Da farver og styling af elementer var nogle af de eneste parametre, jeg havde fuld kontrol over i opgaven, kunne samspillet mellem
+                    farverne være forbedret, ligesom kontrasterne for både CTA-knapper og de enkelte sektioner kunne have været tydeligere.Dog er teksten i main lysere end i body, hvilket skaber en vis visuel adskillelse mellem indhold og baggrund.
+                  </p>
+                </div>
+                <div class="centerbox opigen">
+                  <a href="#temaOversigt"><img src="img/opigen.svg" alt="op igen" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tema-beskrivelse" id="tema-03">
+            <h2>UX/UI</h2>
+            <div class="tema-info">
+              <div class="indhold">
+                <ul>
+                  <li><a href="#formal">Formål</a></li>
+                  <li><a href="#opgavebeskrivelse">Opgavebeskrivelse</a></li>
+                  <li><a href="#design-process">Process</a></li>
+                  <li><a href="#gestaltlov">Style</a></li>
+                  <li><a href="#refleksion">Refleksion</a></li>
+                </ul>
+              </div>
+              <div class="skills centerbox">
+                <a href="https://mikkiatlaa.github.io/emnesite/Emnesite/index.html"><img src="img/sideLink.svg" alt="sidelink" /></a>
+              </div>
+            </div>
+            <div class="formal-section" id="formal">
+              <div class="formal-indhold">
+                <h2>Formål</h2>
+                <p>
+                  Formålet med opgaven var at få en grundlæggende forståelse for, hvordan et website bliver til fra idé og research til prototype og et kodet udkast. Jeg arbejdede med et emne, jeg selv havde interesse i, og brugte processen til at
+                  undersøge, hvordan man kan skabe et tydeligt formål for brugeren gennem struktur, indhold og visuelle valg.Undervejs arbejdede jeg med både lofi og hifi-prototyper, brugertests og udvikling af et site i HTML og CSS. Fokus har ikke
+                  været på at ramme en færdig eller perfekt løsning, men på at forstå sammenhængen mellem idé, design og funktionalitet. Dokumentationen har hjulpet mig med at reflektere over mine valg og min læring, og den fungerer som et grundlag,
+                  jeg kan bygge videre på i kommende projekter.
+                </p>
+                <div class="billedegalleri">
+                  <img src="img/T3website.webp" alt="Tool 1" class="T2menu" />
+                </div>
+              </div>
+            </div>
+            <div class="opgavebeskrivelse" id="opgavebeskrivelse">
+              <div class="opgave-indhold">
+                <h2>Opgave Beskrivelse</h2>
+                <p>
+                  Opgaven havde til formål at udvikle et emnesite med udgangspunkt i et selvvalgt tema. Arbejdet omfattede research og idéudvikling, hvor der blev taget stilling til emne, målgruppe, brugerformål samt valg af indhold i form af tekst
+                  og billeder.
+                </p>
+                <p>
+                  På baggrund af researchen blev der udarbejdet et første udkast, som dannede grundlag for videre udvikling.Som en del af opgaven skulle der udvikles en klikbar lofi-prototype og efterfølgende en klikbar hifi-prototype, som begge blev
+                  brugertestet.
+                </p>
+                <p>Herefter blev der udviklet en kodet version af løsningen som et minimum viable product (MVP) ved brug af HTML og CSS, med mulighed for løbende justeringer i design og indhold.</p>
+                <div class="styletile">
+                  <img src="img/styletileT3.webp" alt="Tool 1" class="T2menu" />
+                </div>
+              </div>
+            </div>
+            <div class="design-process" id="design-process">
+              <div class="design-indhold">
+                <h2>Design Process</h2>
+                <div class="centerbox">
+                  <h3>Design rejsen</h3>
+                  <div class="positioneringskort">
+                    <img src="img/designProcess.webp" alt="Positioneringskort" />
+                    <div>
+                      <ol>
+                        <li>Problem</li>
+                        <li>Antagelse</li>
+                        <li>Research</li>
+                        <li>Løsning</li>
+                        <li>idéskifte</li>
+                        <li>Indsigt</li>
+                        <li>Mål</li>
+                        <li>Refleksion</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <p>
+                    Designprocessen startede med et konkret problem for nye løbere, som ofte har svært ved at finde ind i fællesskabet og overskue, hvor de skal starte. Den første idé byggede på antagelsen om, at brugerne primært havde behov for
+                    guides og infografik, men gennem desk research på Quora og Reddit samt interviews med venner og medlemmer af MKRunning blev denne antagelse udfordret. Researchen viste, at tid, sted og sociale muligheder var vigtigere end tekniske
+                    råd, hvilket flyttede fokus fra informationsformidling til social facilitering.
+                  </p>
+                  <p>
+                    Løsningen blev en platform, der samler løbeklubber, tidspunkter og lokationer i København, med enkel funktionalitet og et nyhedsbrev, der understøtter motivation og engagement. Figuren over processen illustrerer, hvordan projektet
+                    gradvist blev skåret ind til én kerneidé, hvilket gjorde løsningen mere fokuseret, brugervenlig og realistisk.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="gestaltlov-section" id="gestaltlov">
+              <div class="gestaltlov-indhold">
+                <h2>Style</h2>
+                <div class="centerbox">
+                  <div class="grid1-1">
+                    <div>
+                      <p>
+                        Min styletile trækker direkte på æstetikken fra atletik og de Olympiske Lege, hvilket tydeligt kan ses i farvepaletten og de grafiske elementer. Den dybe røde farve er inspireret af det ikoniske design fra Moskva
+                        1980-plakaten, som kombinerer styrke og energi. De rene, geometriske linjer og bølgende baner refererer til tartanbanernes synlige linjer på løbebaner, som også ses i de andre inspirationsbilleder med start- og slutstreger .
+                        Layoutet med flere parallelle linjer og kurver skaber samtidig en rytme og bevægelsesretning, der minder om atletikbanens spor og giver et dynamisk udtryk, som signalerer fart, konkurrence og struktur. Elementer der
+                        kendetegner både løb og den olympiske æstetik.
+                      </p>
+                    </div>
+                    <div class="galleri">
+                      <img src="img/styletileT3.webp" alt="proximity" class="img1" />
+                      <img src="img/inspoT3.webp" alt="inspo" class="img2" />
+                      <img src="img/olposter.webp" alt="olposter" class="img3" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="refleksion-section" id="refleksion">
+              <div class="refleksion-indhold">
+                <h2>Refleksion</h2>
+                <div class="centerbox">
+                  <h3>Design</h3>
+                  <p>
+                    I starten af min designproces kunne jeg have lavet mere research på, hvor mange der løber i Danmark, hvor mange der løber alene, og hvor mange der løber i klubber. Det ville have styrket mit argument for, hvorfor mit design er
+                    relevant. Derudover kunne min designproces også forbedres ved at indsamle fysisk feedback på funktioner og brugerrejser.
+                  </p>
+                  <h3>Process</h3>
+                  <p>
+                    Da jeg lavede min HiFi-prototype, sigtede jeg lidt for højt og havde ikke fuld forståelse for mange af de funktioner, jeg ønskede at implementere. Til min præsentation fik jeg feedback om netop dette: at jeg burde spørge mere
+                    erfarne personer om deres “best practices” og lære af dem i stedet for at starte helt fra bunden. Det ville have gjort processen både hurtigere og mere effektiv.
+                  </p>
+                  <h3>Det endelige produkt</h3>
+                  <p>
+                    Produktet blev godt modtaget, og jeg lærte en del af opgaven. Det var første gang, jeg brugte JavaScript, og det lykkedes som forventet. Selve siden ser dog måske ikke helt poleret ud og kan virke lidt tom, når man ser den i
+                    browseren. Det har lært mig vigtigheden af at arbejde med “100dvw” i CSS for at opdele forskellige sektioner – ikke kun i koden, men også mentalt for brugeren. Det her website du kigger på er et eksempel på det.
+                  </p>
+                </div>
+                <div class="centerbox opigen">
+                  <a href="#temaOversigt"><img src="img/opigen.svg" alt="op igen" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tema-beskrivelse" id="tema-04">
+            <h2>Grundlæggende Brugergrænsefladeudvikling</h2>
+            <div class="tema-info">
+              <div class="indhold">
+                <ul>
+                  <li><a href="#formal">Formål</a></li>
+                  <li><a href="#opgavebeskrivelse">Opgavebeskrivelse</a></li>
+                  <li><a href="#design-process">Kodning Process</a></li>
+                  <li><a href="#gestaltlov">Infografik</a></li>
+                  <li><a href="#refleksion">Refleksion</a></li>
+                </ul>
+              </div>
+              <div class="skills centerbox">
+                <a href="https://mikkiatlaa.github.io/Website/Website/index.html/Index.html"><img src="img/sideLink.svg" alt="sidelink" /></a>
+              </div>
+            </div>
+            <div class="formal-section" id="formal">
+              <div class="formal-indhold">
+                <h2>Formål</h2>
+                <p>
+                  Formålet med denne opgave er at udvikle et interaktivt Emergency Site, hvor jeg lærer og afprøver forskellige teknologier indenfor webdesign, herunder HTML, CSS, JavaScript og vectorgrafik. Opgaven giver mulighed for at
+                  eksperimentere med design og funktionalitet baseret på mavefornemmelser og kreative idéer, samtidig med at jeg udvikler praktiske færdigheder i at bygge et funktionelt webprojekt.
+                </p>
+                <div class="billedegalleri">
+                  <img src="img/sosT4.webp" alt="Tool 1" class="T2menu" />
+                </div>
+              </div>
+            </div>
+            <div class="opgavebeskrivelse" id="opgavebeskrivelse">
+              <div class="opgave-indhold">
+                <h2>Opgave Beskrivelse</h2>
+                <p>
+                  Opgaven går ud på at udvikle et Emergency Site baseret på et eksisterende fundament, som kan hentes på GitHub. Opgaven er individuel, og løsningen skal være unik. Jeg har valgt at fokusere på en nødsituation, hvor dit barn græder,
+                  og du som ny forælder ikke har sovet i lang tid.
+                </p>
+                <p>
+                  Sitet består af tre sider, som følger de udleverede wireframes, og fokus ligger på at implementere manglende funktioner og visuelle elementer ved hjælp af CSS og JavaScript. I processen har jeg blandt andet lavet en interaktiv
+                  infografik, designet en webformular til brugerinput og skabt forsiden. Til sidst implementeres et dark mode, og der foretages justeringer, så sitet fungerer optimalt. Undervejs dokumenteres arbejdet med beskrivelser af de digitale
+                  elementer og den anvendte kode.
+                </p>
+                <div class="styletile">
+                  <img src="img/aiProcesT4.webp" alt="Tool 1" class="T2menu" />
+                </div>
+              </div>
+            </div>
+            <div class="design-process" id="design-process">
+              <div class="design-indhold">
+                <h2>kodning Process</h2>
+                <div class="centerbox">
+                  <h3>javaScript</h3>
+                  <div class="positioneringskort">
+                    <div class="centerbox">
+                      <h4>Interaktiv infografik</h4>
+                      <img src="img/infografiJS.svg" alt="Positioneringskort" />
+                    </div>
+                    <div class="centerbox">
+                      <h4>Forms</h4>
+                      <img src="img/formJs.svg" alt="formsjskode" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid1-1">
+                  <ol>
+                    <li>
+                      const name = document.getElementById("id")
+                      <ul>
+                        <li>Vælger et HTML-element baseret på dets ID.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      const name = document.querySelectorAll(".class")
+                      <ul>
+                        <li>Vælger alle elementer, der matcher en CSS-selector (fx en class).</li>
+                      </ul>
+                    </li>
+                    <li>
+                      document.addEventListener("click", () => {})
+                      <ul>
+                        <li>Lytter efter en hændelse (her: click) på dokumentet.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      name.classList.remove("class")
+                      <ul>
+                        <li>Fjerner en CSS-class fra et element.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      name.classList.add("class")
+                      <ul>
+                        <li>Tilføjer en CSS-class til et element.</li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <ol>
+                    <li>
+                      const name = document.querySelector(".class")
+                      <ul>
+                        <li>Vælger det første HTML-element, der matcher en CSS-selector (fx en class).</li>
+                      </ul>
+                    </li>
+                    <li>
+                      const formData = new FormData(form);
+                      <ul>
+                        <li>Opretter et FormData-objekt, som indeholder alle input-værdier fra en formular.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      const name = formData.get("class")
+                      <ul>
+                        <li>Henter værdien fra et formular-felt med det angivne name-attribut.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      id.textContent = value
+                      <ul>
+                        <li>Ændrer tekstindholdet inde i et HTML-element.</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="gestaltlov-section" id="gestaltlov">
+              <div class="gestaltlov-indhold">
+                <h2>Infografik</h2>
+                <div class="centerbox">
+                  <div class="grid1-1">
+                    <div>
+                      <p>Stuen er valgt som baggrund for at afspejle en genkendelig hverdagssituation i den moderne husstand, hvor infografikken viser, hvordan forskellige reaktioner påvirker et grædende barn.</p>
+                    </div>
+                    <img src="img/stue.svg" alt="proximity" />
+                  </div>
+                  <div class="grid1-1">
+                    <div>
+                      <p>Derfor har jeg skitseret rekvisitter som en guitar og en iPad. Ud fra egne erfaringer oplever jeg, at en iPad sjældent gavner et barn i denne situation, mens musik oftere kan skabe ro, et smil og et lille grin.</p>
+                    </div>
+                    <img src="img/guitarIpad.svg" alt="similarity" />
+                  </div>
+                  <div class="grid1-1">
+                    <div>
+                      <p>Med meget simple vector graffiker har jeg kommunikeret sted, aktører og en samtidig respons på dine handlinger som forældre</p>
+                    </div>
+                    <img src="img/baby.webp" alt="common" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="refleksion-section" id="refleksion">
+              <div class="refleksion-indhold">
+                <h2>Refleksion</h2>
+                <div class="centerbox">
+                  <h3>Design</h3>
+                  <p>
+                    Denne opgave gav mig en bedre grundforståelse for JavaScript. I forhold til designprocessen er jeg fremadrettet bedre forberedt, da jeg vil undgå unødigt komplekse vektorgrafikker i Illustrator, som kan være tidskrævende at
+                    arbejde med.Jeg er ikke tilfreds med det visuelle design af siden, da jeg ikke prioriterede denne del af opgaven. Et mere dynamisk og gennemtænkt design ville have understøttet alvoren i mit emergency-website bedre.
+                  </p>
+                  <h3>Process</h3>
+                  <p>
+                    Min JavaScript-kode kunne helt klart forbedres ved sparring med mere erfarne udviklere og ved at søge feedback fra mine klassekammerater. Som udgangspunkt fungerer min .js-fil logisk, men i takt med at jeg er blevet mere fortrolig
+                    med sproget, er det blevet tydeligt, at løsningen ikke følger best practice.
+                  </p>
+                  <h3>Det endelige produkt</h3>
+                  <p>
+                    Det endelige produkt vil jeg ikke betegne som et MVP, da der mangler både indhold og visuelt udtryk for at kunne give et retvisende feedback. Det fremstår som om, der har været for lidt tanke bag både design og indholdsopbygning.
+                  </p>
+                </div>
+                <div class="centerbox opigen">
+                  <a href="#temaOversigt"><img src="img/opigen.svg" alt="op igen" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tema-beskrivelse" id="tema-05">
+            <h2>Grundlæggende Indhold</h2>
+            <div class="tema-info">
+              <div class="indhold">
+                <ul>
+                  <li><a href="#formal">Formål</a></li>
+                  <li><a href="#opgavebeskrivelse">Opgavebeskrivelse</a></li>
+                  <li><a href="#design-process">Brugertyper</a></li>
+                  <li><a href="#gestaltlov">Design Process</a></li>
+                  <li><a href="#semantisk">Likert Test</a></li>
+                  <li><a href="#refleksion">Refleksion</a></li>
+                </ul>
+              </div>
+              <div class="skills centerbox">
+                <a href="https://mikkiatlaa.github.io/Virksomhedssite/"><img src="img/sideLink.svg" alt="sidelink" /></a>
+              </div>
+            </div>
+            <div class="formal-section" id="formal">
+              <div class="formal-indhold">
+                <h2>Formål</h2>
+                <p>
+                  Formålet med dette tema er at give jer erfaring med hele processen omkring et website-redesign. I får mulighed for at arbejde med både design og kodning, samtidig med at I producerer relevant indhold som tekst, billeder og
+                  hero-sections. Målet er at styrke jeres forståelse for, hvordan et website kan formes visuelt, funktionelt og indholdsmæssigt, samt hvordan man arbejder systematisk med en digital prototype og udvikling.
+                </p>
+                <div class="billedegalleri">
+                  <img src="img/T5site.webp" alt="Tool 1" class="T2menu" />
+                </div>
+              </div>
+            </div>
+            <div class="opgavebeskrivelse" id="opgavebeskrivelse">
+              <div class="opgave-indhold">
+                <h2>Opgave Beskrivelse</h2>
+                <p>
+                  I dette gruppeprojekt skal vi vælge en virksomhed og lave et redesign af deres eksisterende website. Målet er at udvikle et kodet website, som indeholder egenproduceret indhold såsom tekst, billeder og andre relevante sektioner, der
+                  understøtter både design og funktionalitet.
+                </p>
+                <p>
+                  Undervejs dokumenterer vi hele design- og udviklingsprocessen, som strækker sig over fire uger. Vi arbejder med planlægning og projektstyring, vælger den virksomhed, vi vil fokusere på, og gennemfører research og idéudvikling for at
+                  finde den bedste løsning. Herefter udvikler vi en digital prototype, producerer indhold og koder det endelige site. Til sidst tester vi, itererer og præsenterer det færdige resultat, så man kan se både processen og det endelige
+                  redesign.
+                </p>
+                <div class="styletile">
+                  <img src="img/styletileT5.webp" alt="Tool 1" class="T2menu" />
+                </div>
+              </div>
+            </div>
+            <div class="gestaltlov-section" id="gestaltlov">
+              <div class="gestaltlov-indhold">
+                <h2>Brugertyper</h2>
+                <div class="centerbox">
+                  <div class="grid1-1">
+                    <div>
+                      <h3>Børn og unge 9-12 og/eller 13-16</h3>
+                      <p>
+                        der drømmer om at lære en kampsport, fordi de synes, det ser sejt ud, sjovt ud, og fordi de gerne vil føle sig som “rigtige fighters”. De er nysgerrige, energiske og motiveres af rollemodeller. De bliver mødt af voksne, der
+                        træner og øver, som giver børnene en følelse af “wow, hvis de kan, kan jeg også!”
+                      </p>
+                    </div>
+                    <img src="img/kidst5.webp" alt="proximity" class="brugertyper" />
+                  </div>
+                  <div class="grid1-1">
+                    <div>
+                      <h3>Voksne kvinder 17+</h3>
+                      <p>
+                        som ingen erfaring har og gerne vil lære selvforsvar og blive psykisk og fysisk stærkere. De har været usikker ved at tilmelde sig på sporten, som ofte forbindes med mænd, og søger et trygt fællesskab uden dømmende stemning.
+                        De håber at se en kvinde indbydende fællesskab, som ikke kun er domineret af mænd og føle sig velkommen uden problemer i fællesskabet.
+                      </p>
+                    </div>
+                    <img src="img/kvinderT5.webp" alt="similarity" class="brugertyper" />
+                  </div>
+                  <div class="grid1-1">
+                    <div>
+                      <h3>En travl forælder, typisk 30–45 år</h3>
+                      <p>
+                        som gerne vil give sit barn et aktivt og socialt fritidsliv, men samtidig har en fyldt hverdag. De vil hurtigt kunne finde et sted med kampsport, der er trygt og kvalificeret, uden at skulle bruge timevis på research.
+                        Overskuelig information om træningstider, niveauer og priser er vigtig, og de ønsker et sted, hvor barnet både kan udvikle sig, have det sjovt og være en del af et fællesskab.
+                      </p>
+                    </div>
+                    <img src="img/forældreT5.webp" alt="common" class="brugertyper" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="design-process" id="design-process">
+              <div class="design-indhold">
+                <h2>Design Process</h2>
+                <div class="centerbox">
+                  <h3>Gammel Design</h3>
+                  <div class="positioneringskort centerbox">
+                    <img src="img/T5gamle.webp" alt="Positioneringskort" />
+                    <p>det gamle design var rodet og svært at forstå for bruger flow</p>
+                  </div>
+                </div>
+                <div class="centerbox">
+                  <h3>Ny Design</h3>
+                  <div class="positioneringskort centerbox">
+                    <img src="img/T5nye.webp" alt="Positioneringskort" />
+                    <p>Derfor har vi lavet en one-pager hvor vores målgruppe kan hurtigt spare tid og finde lige det de vil fra siden</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gestaltlov-section" id="gestaltlov">
+              <div class="gestaltlov-indhold">
+                <h2>Likert test</h2>
+                <div class="centerbox">
+                  <div class="grid1-1">
+                    <div>
+                      <p>Fra vores design fik vi et gennemsnitligt resultat på 4 ud af 5 at vores side symboliserede kickboksning og kampsport</p>
+                    </div>
+                    <img src="img/4graf.webp" alt="proximity" class="brugertyper" />
+                  </div>
+                  <div class="grid1-1">
+                    <div>
+                      <p>Deres gamle design fik et gennemsnitligt resultat på 3 ud af 5 at den symboliserede kickboksning og kampsport</p>
+                    </div>
+                    <img src="img/3graf.webp" alt="similarity" class="brugertyper" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="refleksion-section" id="refleksion">
+              <div class="refleksion-indhold">
+                <h2>Refleksion</h2>
+                <div class="centerbox">
+                  <h3>Design</h3>
+                  <p>
+                    Vi startede ud med at fokusere på selve designdelen. Vi var hurtige til at komme frem til et design, som vi var glade for. Så hurtig at det gik op for os, at vi ikke havde baseret vores beslutninger på brugerbehov. Derfor blev vi
+                    nødt til at pivot og tænke om vores design igen. Vi fik lavet en likert test for vores style tiles og den eksisterende hjemmeside fra virksomheden, hvor vi dykkede ned i, hvad siden betød for brugeren. Derefter skabte vi en
+                    styletile der bedst passede til de resultater, ud fra de svar vi fik på vores spørgeskema.
+                  </p>
+                  <h3>Process</h3>
+                  <p>
+                    Vi kunne have forbedret vores projekt ved at definere og kontakte den rigtige målgruppe tidligt for bedre at forstå forældre, der booker holdsport til deres børn. Med denne målgruppe i tankerne valgte vi et inkluderende design med
+                    blå og røde farver og et enkelt interface, så det bliver hurtigt og overskueligt at bruge.
+                  </p>
+                  <p>
+                    Vores research stødte på uventede udfordringer, fx manglende svar fra den frivillige forening og begrænset adgang til børnene, hvilket betød, at mange af vores antagelser blev baseret på professionelle gæt snarere end direkte
+                    input.
+                  </p>
+                  <p>
+                    Gruppearbejdet kunne have været bedre organiseret. Manglende rollefordeling og kommunikation betød, at vi ofte arbejdede parallelt med de samme opgaver. Med tydelige roller, deadlines og et fælles workflow, fx via Trello, kunne
+                    processen have været mere effektiv og struktureret.
+                  </p>
+                  <h3>Det endelige produkt</h3>
+                  <p>Selvom det endelige produkt fungerer, har processen vist os vigtigheden af tidlig research, klar rollefordeling, struktur i kodning og konsistent design for at skabe et brugervenligt og overskueligt website.</p>
+                  <p>
+                    At arbejde med et stort opgavesæt sammen med nye folk lærer dig hurtigt om gruppedynamik og samarbejde. Til designprocessen fungerer det bedst at arbejde struktureret og tage skridt ad gangen, så brugerindsigt, virksomhedsbehov og
+                    tests kan integreres løbende. Målgrupperesearch kunne forbedres med konkrete eksempler, fx korte interviews med formanden, så man tydeligt ved, hvem der er størst målgruppe og hvordan brugere tilgår tilbuddet. Kodningen ville have
+                    været nemmere med klar struktur og rollefordeling, hvilket også ville reducere commit-fejl og sikre ensartede CSS-komponenter. Gruppearbejde forbedres gennem tydelig rollefordeling og god kommunikation, både digitalt og internt,
+                    samt forventningsafstemning tidligt i processen for at sikre, at projektet følger en rød tråd.
+                  </p>
+                </div>
+                <div class="centerbox opigen">
+                  <a href="#temaOversigt"><img src="img/opigen.svg" alt="op igen" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

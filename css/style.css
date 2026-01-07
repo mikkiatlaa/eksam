@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  background-color: var(--bg-color);
+}
+
+/* Make raster images and inline SVG scale responsively */
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Use the real body element as a column flex container so footer sits after content */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body {
+  max-width: 1470px;
+  background-color: var(--bg-color);
+}
+
+main {
+  background-color: var(--bg-color);
+  flex: 1 0 auto;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  width: 50dvw;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 999;
+}
+
+.menu-width {
+  width: 50dvw;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.menu-width nav ul li a {
+  padding: 0.375rem 0.625rem;
+}
+
+.menu h1 {
+  transition: opacity 250ms ease, transform 250ms ease;
+  will-change: opacity, transform;
+}
+
+.menu.header-scrolled h1 {
+  opacity: 0;
+  transform: translateY(-0.375rem);
+  pointer-events: none;
+}
+
+.menu.header-scrolled nav ul {
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  min-height: 2.25rem;
+  background-color: var(--section-bg-color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  box-shadow: 0 0.375rem 0.875rem rgba(0, 0, 0, 0.12);
+  transition: all 240ms ease;
+  z-index: 1000;
+}
+
+.menu.header-scrolled nav ul li a {
+  padding: 0.375rem 0.625rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+
+menu nav {
+  width: 50dvw;
+}
+
+.menu-burger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-burger:hover svg path {
+  stroke: var(--button-bg-color);
+  background-color: var(--button-bg-color);
+  scale: 1.1;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100dvh;
+  width: 50dvw;
+  z-index: 10;
+  background-color: var(--invert-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+/* overlay shown when sidebar is open; placed below the sidebar but above page content */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9; /* one below sidebar's z-index */
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.sidebar-overlay.show {
+  opacity: 1;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  flex-direction: column;
+}
+
+.sidebar a {
+  width: 100%;
+  color: var(--h1-main-color);
+  text-decoration: none;
+  padding: 12px 16px;
+}
+
+#close-sidebar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0.4rem;
+}
+
+.sidebar.show {
+  right: 0;
+  transition: right 0.3s ease;
+}
+
+.sidebar.hide {
+  right: -100%;
+  transition: right 0.3s ease;
+}
+
+.li a {
+  color: var(--h1-main-color);
+  text-decoration: none;
+  padding: 0.9rem 1rem;
+  display: block;
+}
+
+/* Flexible, percentage/flex-based section layout */
+.grid_1-1 {
+  width: 100dvw;
+  height: 100dvh;
+  scroll-snap-align: start;
+  flex-wrap: nowrap;
+}
+
+.blue_left {
+  width: 50dvw;
+  height: 100dvh;
+  background-color: var(--section-bg-color);
+}
+
+.blue_right {
+  width: 50dvw;
+  height: 100dvh;
+  background-color: var(--section-bg-color);
+}
+
+.content {
+  max-width: 900px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1% 0;
+}
+
+.flexbox {
+  min-height: 28rem;
+  max-width: 100%;
+  background-repeat: repeat;
+  background-color: var(--section-bg-color);
+  display: flex;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin: 1.25rem 0;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.cta-button:hover {
+  color: var(--button-bg-color);
+  background-color: var(--button-text-color);
+}
+
+.border-box {
+  border-top: 0.15rem solid var(--invert-bg-color);
+  padding: 2.5rem 1rem;
+  margin-top: 1rem;
+  justify-content: end;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 8;
+  background-image: url("../img/logoPattern.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3% 2%;
+}
+
+.logo_container svg {
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: var(--section-bg-color);
+  padding: 12px 16px;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}

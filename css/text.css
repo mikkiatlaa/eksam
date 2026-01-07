@@ -1,0 +1,82 @@
+h1 {
+  color: var(--h1-main-color);
+  font-size: var(--h1-size);
+  margin-top: var(--margin-small);
+  margin-bottom: var(--margin-small);
+  font-family: "Archivo";
+  font-weight: 900;
+}
+
+h2 {
+  color: var(--h2-main-color);
+  font-size: var(--h2-size);
+  font-family: "Archivo";
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--h3-main-color);
+  font-size: var(--h3-size);
+  font-family: "Archivo";
+  font-weight: 400;
+}
+
+p {
+  color: var(--p-main-color);
+  font-size: var(--p-size);
+  margin-top: var(--margin-small);
+  margin-bottom: var(--margin-large);
+  font-family: "Ranade";
+  font-weight: 400;
+}
+
+a {
+  color: var(--h1-main-color);
+  text-decoration: none;
+  font-family: "Ranade";
+  font-weight: 900;
+}
+
+header h1 {
+  color: var(--h1-main-color);
+  font-size: var(--h1-size);
+  margin-top: var(--margin-small);
+  margin-bottom: var(--margin-small);
+  font-family: "Ranade";
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.sidebar a {
+  color: var(--h1-main-color);
+  text-decoration: none;
+  font-family: "Ranade";
+  font-weight: 900;
+  font-size: var(--sidebar-font-size);
+}
+
+ol li {
+  font-weight: 700;
+}
+
+ol li ul li {
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/Archivo/Archivo-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ranade";
+  src: url("../fonts/Ranade/Ranade-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
